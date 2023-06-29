@@ -2,6 +2,7 @@ from tkinter import *
 import random
 from tkinter import messagebox
 
+# hàm thực hiện sau khi nhấn button
 def click_button(row, column):
     global player
     global full
@@ -21,6 +22,7 @@ def click_button(row, column):
         else:
             quit()
 
+#Kiểm tra đã có ai chiến thắng chưa
 def check_winner(player):
 
     for row in range(3):
@@ -47,6 +49,7 @@ def check_winner(player):
         return True
     return False
 
+#hiển thị thông báo chiến thắng
 def display_winner(player):
     current_turn.config(text=player + " win")
     answer=messagebox.askyesno(title=player+ "win", message="You continue new game?")
@@ -54,6 +57,7 @@ def display_winner(player):
         new_game()
     else: quit()
 
+#game mới
 def new_game():
     global full
     full=0
