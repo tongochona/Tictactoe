@@ -74,7 +74,7 @@ window= Tk()
 window.geometry("500x500")
 
 players=["x","o"]
-player="x"
+player=random.choice(players)
 background_winner="green"
 current_turn=Label(text="Start", font=("consolas", 25))
 current_turn.pack()
