@@ -15,6 +15,19 @@ Bài tập cơ bản về sử dụng ngôn ngữ Python. Xây dựng đơn gi�
   *Và tất nhiên sẽ có khả năng hoà.
   ![tictac4](https://github.com/tongochona/Tictactoe/assets/119514288/05d68442-ad8a-4aef-aa45-7ccf8e07eda5)
 
+2.Tuỳ chỉn
+
+ *Bạn có thể tuỳ chỉnh  kí tự và màu thông báo chiến thắng
+ ![tictac5](https://github.com/tongochona/Tictactoe/assets/119514288/239bab6e-c8d6-4844-b225-ce2fbe18c274)
+
+
+ Bạn tìm đến "players" để tuỳ chỉnh kí tự tuỳ ý và tìm đến "background_winner" để tuỳ chỉnh màu sắc nhé.
+
+
+
+ 
+ 
+
 
 
 
