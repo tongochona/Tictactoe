@@ -27,25 +27,25 @@ def check_winner(player):
 
     for row in range(3):
         if button[row][0]["text"]==button[row][1]["text"]==button[row][2]["text"]==player:
-            button[row][0].config(bg="green")
-            button[row][1].config(bg="green")
-            button[row][2].config(bg="green")
+            button[row][0].config(bg=background_winner)
+            button[row][1].config(bg=background_winner)
+            button[row][2].config(bg=background_winner)
             return True
     for column in range(3):
         if button[0][column]["text"]==button[1][column]["text"]==button[2][column]["text"]==player:
-            button[0][column].config(bg="green")
-            button[1][column].config(bg="green")
-            button[2][column].config(bg="green")
+            button[0][column].config(bg=background_winner)
+            button[1][column].config(bg=background_winner)
+            button[2][column].config(bg=background_winner)
             return True
     if button[0][0]["text"] == button[1][1]["text"] == button[2][2]["text"] == player:
-        button[0][0].config(bg="green")
-        button[1][1].config(bg="green")
+        button[0][0].config(bg=background_winner)
+        button[1][1].config(bg=background_winner)
         button[2][2].config(bg="green")
         return True
     if button[0][2]["text"] == button[1][1]["text"] == button[2][0]["text"] == player:
-        button[2][0].config(bg="green")
-        button[1][1].config(bg="green")
-        button[2][0].config(bg="green")
+        button[2][0].config(bg=background_winner)
+        button[1][1].config(bg=background_winner)
+        button[2][0].config(bg=background_winner)
         return True
     return False
 
@@ -75,6 +75,7 @@ window.geometry("500x500")
 
 players=["x","o"]
 player="x"
+background_winner="green"
 current_turn=Label(text="Start", font=("consolas", 25))
 current_turn.pack()
 
